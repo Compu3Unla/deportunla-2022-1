@@ -40,11 +40,6 @@ header {
 	width: 100%;
 	overflow: hidden;
 	}
-body {
-	max-width: 100%;
-	display: flex;
-	flex-direction: column;
-}
 ul { 
 	 width: 1200px;
 	list-style: none;
