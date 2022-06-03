@@ -32,12 +32,8 @@ nav {
 	color: #FFF6F6;
 	justify-content: center
 }
-header {
-	width: 100%;
-	overflow: hidden;
-	}
 ul { 
-	 width: 1200px;
+	width: 1200px;
 	list-style: none;
 	font-size: 0.9em;
 	display:flex;
