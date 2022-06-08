@@ -12,6 +12,7 @@ body {
 header {
 		width: 100%;
 		overflow: hidden;
+		background-image: url("/img/header_home.jpg");
 	}
 nav {
 	position: absolute;
@@ -73,8 +74,8 @@ li{
 	flex-direction: row;
 	justify-content: space-between;
 	margin-right: 30px;
-	width: 160px;
-	height: 20px;
+	width: 180px;
+	height: auto;
 	
 }
 .iconos-info{
