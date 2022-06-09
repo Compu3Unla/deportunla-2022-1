@@ -23,17 +23,14 @@ nav {
 }
 nav ul {
 	font-family: 'Montserrat';
-	font-size: 20px;
 	display: flex;
 	color: #FFF6F6;
 	list-style: none;
 	font-size: 0.9em;
-	display:flex;
 	justify-content: center;
 	justify-content: space-between;
 	margin-right: 100px;
-}*/
-
+}
 .nav-h:hover {
 	text-decoration-line: underline;
 	color: #FCB400;
