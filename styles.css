@@ -145,11 +145,15 @@ h2 {
 }
 
 .Deportes {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-right: 100px;
+	display: grid;
+	grid-template-columns: repeat(4, 240px);
+	grid-template-rows: repeat(2, 310px);
+	grid-column-gap: 11rem;
+	grid-row-gap: 5rem;
+	justify-content: center;
+	margin: 100px 0 100px 0;
 }
+
 .Deportes h3 {
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -169,93 +173,154 @@ h2 {
 .natacion {
 	background-image: url("img/box_natacion.png");
 	background-repeat: no-repeat;
-	width: 234px;
-	height: 298px;
-	padding: 42px 10px 5px 10px;
+	background-position: center;
+	width: 255px;
+	height: 300px;
+	padding: 0px 15px 20px 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	justify-content: flex-end;}
+	justify-content: flex-end;
+}
 
-	.Voley {
-		background-image: url("img/box_volley.png");
-		background-repeat: no-repeat;
-		width: 234px;
-		height: 298px;
-		padding: 42px 10px 5px 10px;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		justify-content: flex-end;}
+.Voley {
+	background-image: url("img/box_volley.png");
+	background-repeat: no-repeat;
+	width: 255px;
+	height: 300px;
+	padding: 0px 15px 20px 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
 
-		.Atletismo {
-			background-image: url("img/box_atletismo.png");
-			background-repeat: no-repeat;
-			width: 234px;
-			height: 298px;
-			padding: 42px 10px 5px 10px;
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			justify-content: flex-end;}
+.Atletismo {
+	background-image: url("img/box_atletismo.png");
+	background-repeat: no-repeat;
+	width: 255px;
+	height: 300px;
+	padding: 0px 15px 20px 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
 
-			.Futsal {
-				background-image: url("img/box_futsal.png");
-				background-repeat: no-repeat;
-				width: 234px;
-				height: 298px;
-				padding: 42px 10px 5px 10px;
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-				justify-content: flex-end;}
+.Futsal {
+	background-image: url("img/box_futsal.png");
+	background-repeat: no-repeat;
+	width: 255px;
+	height: 300px;
+	padding: 0px 15px 20px 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
 
-				.Handball {
-					background-image: url("img/box_handball.png");
-					background-repeat: no-repeat;
-					width: 234px;
-					height: 298px;
-					padding: 42px 10px 5px 10px;
-					display: flex;
-					flex-direction: column;
-					text-align: center;
-					justify-content: flex-end;}
+.Handball {
+	background-image: url("img/box_handball.png");
+	background-repeat: no-repeat;
+	width: 255px;
+	height: 300px;
+	padding: 0px 15px 20px 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
 
-					.Ajedrez {
-						background-image: url("img/box_chess.png");
-						background-repeat: no-repeat;
-						width: 234px;
-						height: 298px;
-						padding: 42px 10px 5px 10px;
-						display: flex;
-						flex-direction: column;
-						text-align: center;
-						justify-content: flex-end;}
+.Ajedrez {
+	background-image: url("img/box_chess.png");
+	background-repeat: no-repeat;
+	width: 255px;
+	height: 305px;
+	padding: 0px 15px 10px 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
 
-						.Basquet {
-							background-image: url("img/box_basquet.png");
-							background-repeat: no-repeat;
-							width: 234px;
-							height: 298px;
-							padding: 42px 10px 5px 10px;
-							display: flex;
-							flex-direction: column;
-							text-align: center;
-							justify-content: flex-end;}
+.Basquet {
+	background-image: url("img/box_basquet.png");
+	background-repeat: no-repeat;
+	width: 255px;
+	height: 300px;
+	padding: 0px 15px 20px 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
 
-							.Funcional {
-								background-image: url("img/box_funcional.png");
-								background-repeat: no-repeat;
-								width: 234px;
-								height: 298px;
-								padding: 42px 10px 5px 10px;
-								display: flex;
-								flex-direction: column;
-								text-align: center;
-								justify-content: flex-end;
-							}
+.Funcional {
+	background-image: url("img/box_funcional.png");
+	background-repeat: no-repeat;
+	width: 255px;
+	height: 330px;
+	padding: 0px 15px 20px 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;
+}
+
+/*--------------HTML CONTACTO---------------*/
+.boxFormularioAzul {
+	width: 601px;
+	height: 800px;
+	left: 222px;
+	top: 983px;
+	background: #4333FF;
+	border-radius: 93px 0px 0px 92px;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 60px;
+	line-height: 66px;
+	display: flex;
+	align-content: flex-start;
+	text-decoration-color: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.boxFormularioAzul p {
+	font-weight: 800;
+	font-style: bold;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: white;
+}
+.boxFormularioRosa {
+	width: 861px;
+	height: 800px;
+	left: 824px;
+	top: 983px;
+	background: #F6ECEA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 97px 97px 4px;
+	text-decoration-color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 45px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #4333FF;
+}
+.boxFormularioRosa p {
+	
+}
+.boxFormulario {
+	padding: 5em;
+	display: flex;
+	
+}
 /*--------------SECRETARIA--------------*/
-
 .boxflex {
 	background-image: url("img/fondo_home_tenis.jpg");
 	height: 395px;
@@ -264,6 +329,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin:  50px 0 50px 0;
 }
 .titulosecretaria {
 	width: 100%;
@@ -316,6 +382,21 @@ h2 {
 	justify-content:space-around;
 	margin: auto 0px auto 0px;
 	padding: 0 120px 0 120px;
+}
+
+/*--------------CARDS EVENTOS------------*/
+.cardsFlex {
+	width: 100%;
+	height: 748px;
+	display: flex;
+	flex-direction: row;
+	padding: 50 120px 0 120px;
+}
+.cardTorneoajedrez {
+	width: 520px;
+	height: 494px;
+	left: 94px;
+	background-image: url("img/card_ajedrez.jpg");
 }
 /*--------------FOOTER--------------*/
 footer { 
