@@ -1,87 +1,363 @@
 @charset "utf-8";
 /* CSS Document */
-* {	margin: 0px;
+* {
+	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
-/*-----------NAV-----------*/
+
 body {
-	 width: 100%;
-	 display: flex;
-	 flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 header {
-		width: 100%;
-		overflow: hidden;
-		background-image: url("/img/header_home.jpg");
-	}
+	width: 100%;
+	height: 990px;
+	overflow: hidden;
+}
+.cabeceraHome {
+	background-image: url("img/header_home.jpg");
+	width: 100%;
+	height: 990px;
+}
+
+.cabeceraContacto {
+	background-image: url("img/img_contacto/header_contacto.jpg");
+	width: 100%;
+	height: 870px;
+}
+
+.cabeceraInfo {
+	background-image: url("img/img_informacion/header_info.png");
+	width: 100%;
+	height: 870px;
+}
+
+.cabeceraEventos {
+	background-image: url("img/img_eventos/header_eventos.png");
+	width: 100%;
+	height: 870px;
+}
+header p {
+	margin: 0px 0px 50px 40px;
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 300;
+	font-size: 24px;
+	color: #FFF6F6;
+}
+
 nav {
-	position: absolute;
+	display: flex;
 	width: 100%;
 	height: 90px;
-	background-color: rgba(196, 196, 196, 0.1);	
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color: rgba(196, 196, 196, 0.1);
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+}
+nav img {
+	margin: auto 30px;
 }
 nav ul {
 	font-family: 'Montserrat';
 	display: flex;
 	color: #FFF6F6;
+	width: 1400px;
 	list-style: none;
-	font-size: 0.9em;
-	justify-content: center;
-	justify-content: space-between;
+	font-size: 1em;
+	justify-content:space-between;
+	text-decoration-line: none;
+}
+
+nav ul li {
+	font-family: 'Montserrat';
+	display: inline-block;
+	font-size: 1em;
+	color: #FFF6F6;
+	list-style: none;
+	width: 70px;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+	color: #FCB400;
+	font-weight: bold;
+	transform: scale(1.2);
+}
+
+nav a:active {
+	color: #FCB400;	
+}
+
+nav a:visited {
+	color: #FFF6F6;	
+}
+
+
+h1 { 
+	width: 100%;
+	margin: 300px 0px 0px 30px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 90px;
+	color: #FCB400;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 { 
+	width: 100%;
+	margin: 0px 0px 0px 30px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 90px;
+	color: #FFF6F6;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bold {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 90px;
+	color: #FFF6F6;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botonera {
+	background: #FF6550;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 55px;
+	border-color: #FF6550;
+	margin: 0px 0px 0px 40px;
+	height: 65px;
+	width: 270px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	color: #FFF6F6;
+}
+
+.Deportes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	margin-right: 100px;
 }
-.nav-h:hover {
-	text-decoration-line: underline;
-	color: #FCB400;
-	font-weight: 700;
-	}
-.nav-a:active {
-	color: #FCB400;	
-	}
+.Deportes h3 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700px;
+	font-size: 20px;
+	margin-bottom:24px;
+}
 
-.lupa {
-	margin-top: 25px;
-	margin-right: 50px;
+.Deportes p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11pt;
+	line-height: 12.5pt;
+	margin-bottom: 10px;
+}
+.natacion {
+	background-image: url("img/box_natacion.png");
+	background-repeat: no-repeat;
+	width: 234px;
+	height: 298px;
+	padding: 42px 10px 5px 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-end;}
+
+	.Voley {
+		background-image: url("img/box_volley.png");
+		background-repeat: no-repeat;
+		width: 234px;
+		height: 298px;
+		padding: 42px 10px 5px 10px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: flex-end;}
+
+		.Atletismo {
+			background-image: url("img/box_atletismo.png");
+			background-repeat: no-repeat;
+			width: 234px;
+			height: 298px;
+			padding: 42px 10px 5px 10px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: flex-end;}
+
+			.Futsal {
+				background-image: url("img/box_futsal.png");
+				background-repeat: no-repeat;
+				width: 234px;
+				height: 298px;
+				padding: 42px 10px 5px 10px;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				justify-content: flex-end;}
+
+				.Handball {
+					background-image: url("img/box_handball.png");
+					background-repeat: no-repeat;
+					width: 234px;
+					height: 298px;
+					padding: 42px 10px 5px 10px;
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					justify-content: flex-end;}
+
+					.Ajedrez {
+						background-image: url("img/box_chess.png");
+						background-repeat: no-repeat;
+						width: 234px;
+						height: 298px;
+						padding: 42px 10px 5px 10px;
+						display: flex;
+						flex-direction: column;
+						text-align: center;
+						justify-content: flex-end;}
+
+						.Basquet {
+							background-image: url("img/box_basquet.png");
+							background-repeat: no-repeat;
+							width: 234px;
+							height: 298px;
+							padding: 42px 10px 5px 10px;
+							display: flex;
+							flex-direction: column;
+							text-align: center;
+							justify-content: flex-end;}
+
+							.Funcional {
+								background-image: url("img/box_funcional.png");
+								background-repeat: no-repeat;
+								width: 234px;
+								height: 298px;
+								padding: 42px 10px 5px 10px;
+								display: flex;
+								flex-direction: column;
+								text-align: center;
+								justify-content: flex-end;
+							}
+/*--------------SECRETARIA--------------*/
+
+.boxflex {
+	background-image: url("img/fondo_home_tenis.jpg");
+	height: 395px;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.titulosecretaria {
+	width: 100%;
+	margin: auto;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35px;
+	color: #FFF6F6;
+}
+.boxtexto {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	color: #FFF6F6;
+}
+.boxoportunidades {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	color: #FFF6F6;
+}
+.boxsalud {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	color: #FFF6F6;
+}
+.contenedor {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	margin: auto 0px auto 0px;
+	padding: 0 120px 0 120px;
 }
 /*--------------FOOTER--------------*/
 footer { 
 	position: inherit;
 	height: 140px;
-  	width: 100%;
+	width: 100%;
 	background-color: #FF4930;
-	font-size: 12px;
+	font-size: 14px;
+	font-family: 'Montserrat';
 	display: flex;
 	color: #FFFFFF;
 	flex-direction: row;
 	justify-content: center;
-	}	
+}
 footer img {
 	width: 18px;
 	display: flex; 
 	flex-direction: column;
-	}
-li{
+}
+
+footer li {
 	list-style: none;
 	padding: 30px 0 0px 250px;
 	width: inherit;
 }
-.iconos-redes{
+
+.iconosRedes {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-right: 30px;
 	width: 180px;
 	height: auto;
-	
+
 }
-.iconos-info{
+.iconosInfo{
 	display: flex;
 	flex-direction: column;
 	margin-right: 10px;
 	margin-top: 5px;
 }
 
-.titulos-footer{
+.titulosFooter{
 	margin: 0 5px 10px 0px;
 }
