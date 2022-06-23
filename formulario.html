@@ -1,0 +1,132 @@
+<!doctype html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Deportunla</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="img/favico.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="cabeceraFormulario">
+			<nav>
+				<a href="index.html"><img src="img/logo_deportunla.png" height="35" alt="logo Deportunla"></a>
+				<ul>
+					<li><a href="informacion.html">Informaci&oacute;n</a></li>
+					<li><a href="deportes.html">Deportes</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="eventos.html">Eventos</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+				<a href="http://www.unla.edu.ar/"><img src="img/logo_unla_nav.png" height="57" alt="Logo UNLa"></a>
+			</nav>
+		</header>
+		<section class="boxFormulario">
+			<article class="boxFormularioAzulInsc">
+				<p class="tituloForminsc">Inscripci&oacute;n a deportes</p>
+				<p>Las inscripciones est&aacute;n abiertas</p>
+				<p>hasta el 30 de mayo de 2022</p>
+				<img src="img/decoracion_form_inscripcion.png" alt="equipo de atletas">
+			</article>
+			<article class="boxFormularioRosaInsc">
+				<span>¡Hola, segu&iacute; los pasos para inscribirte y listo!</span>
+				<div class="columnasInscripcion">
+					<div>
+						<form class="estiloFormInsc" method="post" action="mailto: deportunla@gmail.com.ar" subject="Email enviado desde el formulario">
+
+							<label for="Nombre">Nombre y Apellido:</label>
+							<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Nombre completo" required>
+
+							<label for="Dni">DNI:</label>
+							<input type="number" name="Dni" id="Dni" maxlenght="30"  required>
+
+							<label for="Sexo">Sexo</label>
+							<select class="cajaDeportes" name="sexo">
+								<option>Femenino</option>
+								<option>Masculino</option>
+								<option>No binario</option>
+							</select>
+
+							<label for="Edad">Edad:</label>
+							<input type="number" name="Edad" id="Edad" maxlenght="30" required>
+
+							<label for="Estatura">Estatura:</label>
+							<input type="number" name="Estatura" id="Estatura" maxlenght="30" required>
+
+							<label for="Localidad">Localidad:</label>
+							<input type="text" name="Localidad" id="Localidad" maxlenght="30" required>
+						</form>
+					</div>
+					<div>
+						<form class="estiloFormInsc">
+							<label for="Email">Email:</label>
+							<input type="email" name="Email" id="Email" required>
+
+							<label for="Deportes">Deportes</label>
+							<select class="cajaDeportes" name="deportes">
+								<option>Voley</option>
+								<option>Futbol</option>
+								<option selected>Tenis</option>
+								<option selected>Hockey</option>
+								<option selected>Ajedrez</option>
+								<option selected>Handball</option>
+							</select>
+
+							<label for="Nacimiento">Fecha de Nacimiento:</label>
+							<input type="date" name="Nacimiento" id="Nacimiento">
+
+							<label for="Peso">Peso</label>
+							<input type="number" name="Peso" id="Peso" required>
+
+							<label for="Direccion">Direcci&oacute;n:</label>
+							<input type="text" name="Direccion" id="Direccion" maxlenght="30" required>
+
+							<label for="Cp">C&oacute;digo Postal:</label>
+							<input type="number" name="cp" id="cp" maxlenght="30" required>
+
+							<input class="inputEnviar" type="submit" value="Enviar">
+						</form>
+					</div>
+				</div>
+			</article>
+
+		</section>
+		<footer>
+			<li>
+				<h4 class="titulosFooter">CONTACTO</h4>
+				<ol  class="iconosInfo">
+					<p>
+						<img class="iconosInfo" src="img/icono_telefono.svg" align="left" alt="teleofno"/>4281-4085 / 4281-4085
+					</p>
+					<p>
+						<img class="iconosInfo" src="img/icono_gps.svg" align="left" alt="ubicacion"/>Av. 29 de septiembre, Lan&uacute;s
+					</p>
+					<p>
+						<img class="iconosInfo" src="img/icono_mail.svg" align="left" alt="mail"/>
+						info@unla.com.ar
+					</p>
+				</ol>
+			</li>
+			<li class="sitiosdeinteres">
+				<h4 class="titulosFooter">SITIOS DE INTER&Eacute;S</h4>
+				<ol>
+					<p><a href="Ciclosdelincenciatura">Ciclos de Licenciatura</a></p>
+					<p><a href="Posgrados">Posgrados</a></p>
+					<p><a href="CursosYTalleres">Cursos y talleres</a></p>
+				</ol>
+			</li>
+			<li>
+				<h4 class="titulosFooter">REDES SOCIALES</h4>
+				<ol class="iconosRedes">
+					<img src="img/icono_redes_03.svg" alt="instagram"/>
+					<img src="img/icono_redes_02.svg" alt="facebook"/>
+					<img src="img/icono_web.svg" alt="web"/>
+					<img src="img/logo_unla.svg" alt="unla"/>
+				</ol>
+			</li>
+		</footer>
+	</body>
+	</html>

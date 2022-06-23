@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+html a {
+	text-decoration: none;
+	color: white;
+}
 body {
 	width: 100%;
 	display: flex;
@@ -18,13 +22,15 @@ header {
 }
 .cabeceraHome {
 	background-image: url("img/header_home.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
 	width: 100%;
 	height: 990px;
 }
 
 .cabeceraContacto {
 	background-image: url("img/img_contacto/header_contacto.jpg");
-	width: 100%;
+	background-repeat: no-repeat;
 	height: 870px;
 }
 
@@ -35,11 +41,32 @@ header {
 }
 
 .cabeceraEventos {
-	background-image: url("img/img_eventos/header_eventos.png");
+	background-image: url("img/img_eventos/header_eventos.jpg");
 	width: 100%;
 	height: 870px;
 }
+
+.cabeceraFormulario {
+	background-color:#737373;
+	height: 90px;
+	width: 100%;
+}
+.tituloSeccion {
+	margin: 300px 0px 0px 0px;
+	text-align: center;
+}
+.tituloSeccion h1 {
+	color: white;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.tituloSeccion p {
+	text-align: center;
+	color: white;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 header p {
+	width: 100%;
 	margin: 0px 0px 50px 40px;
 	font-family: 'Montserrat';
 	font-style: italic;
@@ -97,7 +124,6 @@ nav a:visited {
 	color: #FFF6F6;	
 }
 
-
 h1 { 
 	width: 100%;
 	margin: 300px 0px 0px 30px;
@@ -106,6 +132,17 @@ h1 {
 	font-weight: 700;
 	font-size: 90px;
 	color: #FCB400;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.secciones {
+	width: 100%;
+	margin:300px 0 0 0;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 90px;
+	color: #FFFFFF;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -131,7 +168,6 @@ h2 {
 
 .botonera {
 	background: #FF6550;
-	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 55px;
 	border-color: #FF6550;
 	margin: 0px 0px 0px 40px;
@@ -142,6 +178,17 @@ h2 {
 	font-weight: 500;
 	font-size: 24px;
 	color: #FFF6F6;
+	background-color: rgba(220, 0, 0, 1);
+	box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+	background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+	box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+	inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 .Deportes {
@@ -173,9 +220,9 @@ h2 {
 .natacion {
 	background-image: url("img/box_natacion.png");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom;
 	width: 255px;
-	height: 300px;
+	height: 330px;
 	padding: 0px 15px 20px 15px;
 	display: flex;
 	flex-direction: column;
@@ -186,8 +233,9 @@ h2 {
 .Voley {
 	background-image: url("img/box_volley.png");
 	background-repeat: no-repeat;
+	background-position: bottom;
 	width: 255px;
-	height: 300px;
+	height: 330px;
 	padding: 0px 15px 20px 15px;
 	display: flex;
 	flex-direction: column;
@@ -198,8 +246,9 @@ h2 {
 .Atletismo {
 	background-image: url("img/box_atletismo.png");
 	background-repeat: no-repeat;
+	background-position: bottom;
 	width: 255px;
-	height: 300px;
+	height: 330px;
 	padding: 0px 15px 20px 15px;
 	display: flex;
 	flex-direction: column;
@@ -210,8 +259,9 @@ h2 {
 .Futsal {
 	background-image: url("img/box_futsal.png");
 	background-repeat: no-repeat;
+	background-position: bottom;
 	width: 255px;
-	height: 300px;
+	height: 330px;
 	padding: 0px 15px 20px 15px;
 	display: flex;
 	flex-direction: column;
@@ -222,8 +272,9 @@ h2 {
 .Handball {
 	background-image: url("img/box_handball.png");
 	background-repeat: no-repeat;
+	background-position: bottom;
 	width: 255px;
-	height: 300px;
+	height: 330px;
 	padding: 0px 15px 20px 15px;
 	display: flex;
 	flex-direction: column;
@@ -234,8 +285,9 @@ h2 {
 .Ajedrez {
 	background-image: url("img/box_chess.png");
 	background-repeat: no-repeat;
+	background-position: bottom;
 	width: 255px;
-	height: 305px;
+	height: 330px;
 	padding: 0px 15px 10px 15px;
 	display: flex;
 	flex-direction: column;
@@ -246,8 +298,9 @@ h2 {
 .Basquet {
 	background-image: url("img/box_basquet.png");
 	background-repeat: no-repeat;
+	background-position: bottom;
 	width: 255px;
-	height: 300px;
+	height: 330px;
 	padding: 0px 15px 20px 15px;
 	display: flex;
 	flex-direction: column;
@@ -258,6 +311,7 @@ h2 {
 .Funcional {
 	background-image: url("img/box_funcional.png");
 	background-repeat: no-repeat;
+	background-position: bottom;
 	width: 255px;
 	height: 330px;
 	padding: 0px 15px 20px 15px;
@@ -269,8 +323,8 @@ h2 {
 
 /*--------------HTML CONTACTO---------------*/
 .boxFormularioAzul {
-	width: 601px;
-	height: 800px;
+	width: 600px;
+	height: 900px;
 	left: 222px;
 	top: 983px;
 	background: #4333FF;
@@ -287,15 +341,18 @@ h2 {
 .boxFormularioAzul p {
 	font-weight: 800;
 	font-style: bold;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 80px 50px 0 0;
 	color: white;
+}
+.boxFormularioAzul img {
+	position: absolute;
+	object-fit: none;
+	object-position: bottom left;
+	margin-top: 613px;
 }
 .boxFormularioRosa {
 	width: 861px;
-	height: 800px;
+	height: 900px;
 	left: 824px;
 	top: 983px;
 	background: #F6ECEA;
@@ -307,18 +364,65 @@ h2 {
 	font-weight: 600;
 	font-size: 35px;
 	line-height: 45px;
-	display: flex;
+	display:inline-block;
 	align-items: center;
-	text-align: center;
 	color: #4333FF;
+	padding: 80px 0 0 100px;
 }
-.boxFormularioRosa p {
-	
+.boxFormularioRosa form {
+	padding-top: 33px;
 }
+.boxFormularioRosa span {
+	text-align: center;
+}
+.estiloFormulario {
+	width: 604px;
+}
+
 .boxFormulario {
 	padding: 5em;
 	display: flex;
-	
+	justify-content: center;
+}
+label {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: none !important;
+}
+input {
+	width: 600px;
+	height: 59px;
+	background: #FFFFFF;
+	border: 3px solid #EDD3CF;
+	border-radius: 6px;
+}
+.mensaje {
+	width: 600px;
+	height: 200px;
+	background: #FFFFFF;
+	border: 3px solid #EDD3CF;
+	border-radius: 8px;
+}
+.inputEnviar{
+	width: 160px;
+	margin-top: 30px;
+	background: #FCB400 !important;
+	border-radius: 50px !important;
+	border: 5px solid #EDD3CF !important;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+	}
+.restablecer {
+	width: 160px;
+	margin: 30px 0 0 0;
+	background:#707070 !important;
+	border-radius: 50px !important;
+	border: 5px solid #EDD3CF !important;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
 }
 /*--------------SECRETARIA--------------*/
 .boxflex {
@@ -385,19 +489,161 @@ h2 {
 }
 
 /*--------------CARDS EVENTOS------------*/
-.cardsFlex {
+.cardsFlex{
 	width: 100%;
-	height: 748px;
 	display: flex;
 	flex-direction: row;
-	padding: 50 120px 0 120px;
+	justify-content:space-around;
+	margin-bottom: 80px;
 }
+
+.cardsFlex h3 {
+	font-style: 400;
+	font-size:23px;
+	font-family: 'Montserrat';
+	text-align: center;
+}
+
+.cardsFlex p {
+	font-size:18px;
+	font-family: 'Montserrat';
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 .cardTorneoajedrez {
-	width: 520px;
-	height: 494px;
-	left: 94px;
-	background-image: url("img/card_ajedrez.jpg");
+	background-size: cover;
+	padding: 0em 0 0 0;
+	transition: transform 500ms ease;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: #F3F3F3;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	align-items: flex-end;
 }
+
+.cardTorneoajedrez:hover {
+	transform: scale(1.05);
+}
+
+.cardNatacion {
+	background-size: cover;
+	padding: 0em 0 0 0;
+	transition: transform 500ms ease;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: #F3F3F3;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	align-items: flex-end;
+}
+
+.cardNatacion:hover {
+	transform: scale(1.05);
+}
+
+.cardPerrunla {
+	background-size: cover;
+	padding: 0em 0 0 20;
+	transition: transform 500ms ease;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: #F3F3F3;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	align-items: flex-end;
+}
+
+.cardPerrunla:hover {
+	transform: scale(1.05);
+}
+/*----FORMULARIO INSCRIPCION------*/
+
+.popUp {
+	box-sizing: border-box;
+	width: 669px;
+	height: 748px;
+	left: 630px;
+	top: 345px;
+	background: #FFFFFF;
+	border: 8px solid #F6ECEA;
+	border-radius: 97px;
+}
+.boxFormularioRosaInsc {
+	width: 90%;
+	height: 1000px;
+	padding: 100px 0 0 40px;
+	left: 824px;
+	top: 983px;
+	background: #F6ECEA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 97px 97px 4px;
+	display: flex;
+	flex-direction: column;
+	color: #4333FF;
+}
+.boxFormularioRosaInsc span {
+	text-decoration-color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35px;
+}
+
+.columnasInscripcion {
+	display: grid;
+	grid-template-columns: repeat(2,auto);
+	grid-gap: 2rem; 
+	width: auto;
+	margin-top: 25px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+}
+.columnasInscripcion input {
+	width: 350px;
+	height: 59px;
+	background: #FFFFFF;
+	border: 3px solid #EDD3CF;
+	border-radius: 6px;
+}
+.boxFormularioAzulInsc {
+	padding-top: 100px;
+	width: 650px;
+	height: 1000px;
+	background: #4333FF;
+	border-radius: 93px 0px 0px 92px;
+	text-align: center;
+	display: flex;
+	align-content: flex-start;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	flex-direction: column;
+}
+.boxFormularioAzulInsc img {
+	width: 400px;
+	margin: 60px auto 0 auto;
+}
+.tituloForminsc {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 35px;
+}
+.boxFormularioAzulInsc {
+	color: white;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 25px;
+}
+.estiloFormInsc {
+	width: 200px;
+}
+.cajaDeportes {
+	width: 230px;
+	height: 59px;
+	background: #FFFFFF;
+	border: 3px solid #EDD3CF;
+	border-radius: 6px;
+}
+
 /*--------------FOOTER--------------*/
 footer { 
 	position: inherit;
@@ -441,4 +687,173 @@ footer li {
 
 .titulosFooter{
 	margin: 0 5px 10px 0px;
+}
+
+@media screen and (max-width: 600px){
+
+	body {
+		width: 100%;
+	}
+	.checktbt{
+		display: block;
+	}
+	
+	.menuiconos{
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+	}
+	header {
+		overflow: hidden;
+	}
+	h1 { 
+		margin: 150px 0px 0px 30px;
+		font-size: 70px;
+	}
+	h2 { 
+		font-size: 70px;
+	}
+	.bold { 
+		font-size: 70px;
+	}
+
+	.botonera {
+		margin-left: 160px; 
+	}
+	a{
+		color: black;
+	}
+	
+	nav ul{
+		display: block;
+		position: fixed;
+		top: 70px;
+		right:-100%;
+		background-color:#FFF6F6;
+		width: 100%;
+		
+	}
+	nav ul li{
+		padding: 2rem;
+		display: flex;
+		justify-content: center;
+		margin-left: 130px;
+	}
+	
+	.imgnav{
+		display: none;
+	}
+	#check:checked ~ ul{
+		left:0;
+	}
+	
+	.Unlalogo{
+		display: none;
+	}
+	
+	.iconosRedes {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-right: 30px;
+		width: 180px;
+		height: auto;
+	}
+	
+	.Deportes {
+		grid-template-columns: repeat(2,240px);
+		grid-template-rows: repeat(4,310px);
+		grid-gap: 2rem; 
+		
+	}
+	/*--------secretaria----------------*/
+.boxflex {
+	background-image: url("img/fondo_tenis_mobile.png");
+	background-repeat: no-repeat;
+	background-size: 728px;
+	height: 728px;
+}
+
+.titulosecretaria {
+	width: 60%;
+	font-weight: 800;
+	font-size: 17px;
+}
+
+.boxtexto {
+	width: 300px;
+	align-content: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	color: #FFF6F6;
+}
+.boxoportunidades {
+	width: 300px;
+	align-content: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	color: #FFF6F6;
+}
+.boxsalud {
+	width: 300px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	color: #FFF6F6;
+}
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	height: 500px;
+	margin: auto;
+	padding: 0 120px 0 120px;
+}
+
+.cardTorneoajedrez{
+	margin-right: 50px;
+}
+
+.cardNatacion{
+	margin-right: 50px;
+}
+
+.cardPerrunla{
+	margin-right: 40px;
+}
+footer li {
+	list-style: none;
+	padding: 30px 0 0px 0px;
+	width: 100%;
+	margin-left: 50px;
+}
+
+footer{
+	align-content: space-between;
+}
+
+.iconosRedes {
+	display: grid;
+	grid-template-columns: repeat(2);
+	grid-template-rows: repeat(2); 
+	justify-content: space-between;
+	margin-right: 10px;
+	width: 180px;
+	height: 180px;
+}
+.sitiosdeinteres {
+	display: none;
+}
 }
