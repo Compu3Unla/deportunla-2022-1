@@ -1,0 +1,5 @@
+Trabajamos en las siguientes resoluciones: 1920px, 1200px y 600px. 
+El HTML que funciona con responsive es el index.
+Entregamos tres HTML completos y funcionales: index, la página de contacto y la página con el formulario para la inscripción.
+Se agregó contenido para las páginas en desarrollo para que no lleven a una pantalla de error.
+
