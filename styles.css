@@ -10,16 +10,19 @@ html a {
 	text-decoration: none;
 	color: white;
 }
+
 body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
+
 header {
 	width: 100%;
 	height: 990px;
 	overflow: hidden;
 }
+
 .cabeceraHome {
 	background-image: url("img/header_home.jpg");
 	background-repeat: no-repeat;
@@ -51,14 +54,23 @@ header {
 	height: 90px;
 	width: 100%;
 }
+
+.cabeceraConstruccion {
+	background-color:#B8A1A1;
+	width: 100%;
+	height: 870px;
+}
+
 .tituloSeccion {
 	margin: 300px 0px 0px 0px;
 	text-align: center;
 }
+
 .tituloSeccion h1 {
 	color: white;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .tituloSeccion p {
 	text-align: center;
 	color: white;
@@ -79,21 +91,28 @@ nav {
 	display: flex;
 	width: 100%;
 	height: 90px;
-	background-color: rgba(196, 196, 196, 0.1);
+	background-color: rgba(0, 0, 0, 0.6);
 	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	text-decoration: none;
+	position: fixed;
 }
+
 nav img {
 	margin: auto 30px;
 }
+
+.imgnav {
+	margin-bottom: 0px;
+}
+
 nav ul {
 	font-family: 'Montserrat';
 	display: flex;
-	color: #FFF6F6;
-	width: 1400px;
+	color: #FFFFFF;
+	width: 60%;
 	list-style: none;
 	font-size: 1em;
 	justify-content:space-between;
@@ -104,24 +123,33 @@ nav ul li {
 	font-family: 'Montserrat';
 	display: inline-block;
 	font-size: 1em;
-	color: #FFF6F6;
+	color: #FFFFFF;
 	list-style: none;
-	width: 70px;
+	width: 50%;
 }
 
 nav ul li a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	color: #FCB400;
 	font-weight: bold;
 	transform: scale(1.2);
 }
 
 nav a:active {
-	color: #FCB400;	
+	color:#FCB400 ;
 }
 
-nav a:visited {
-	color: #FFF6F6;	
+ a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menuiconos {
+	display: none;
+}
+
+#check {
+	display: none
 }
 
 h1 { 
@@ -217,111 +245,145 @@ h2 {
 	line-height: 12.5pt;
 	margin-bottom: 10px;
 }
+
 .natacion {
 	background-image: url("img/box_natacion.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 20px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-.Voley {
+.natacion:hover {
+	transform: scale(1.3);
+}
+
+.voley {
 	background-image: url("img/box_volley.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 20px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-.Atletismo {
+.voley:hover {
+	transform: scale(1.3);
+}
+
+.atletismo {
 	background-image: url("img/box_atletismo.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 20px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-.Futsal {
+.atletismo:hover {
+	transform: scale(1.3);
+}
+
+.futsal {
 	background-image: url("img/box_futsal.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 20px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-.Handball {
+.futsal:hover {
+	transform: scale(1.3);
+}
+
+.handball {
 	background-image: url("img/box_handball.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 20px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-.Ajedrez {
+.handball:hover {
+	transform: scale(1.3);
+}
+
+.ajedrez {
 	background-image: url("img/box_chess.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 10px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-.Basquet {
+.ajedrez:hover {
+	transform: scale(1.3);
+}
+
+.basquet {
 	background-image: url("img/box_basquet.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 20px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-.Funcional {
+.basquet:hover {
+	transform: scale(1.3);
+}
+
+.funcional {
 	background-image: url("img/box_funcional.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 255px;
 	height: 330px;
-	padding: 0px 15px 20px 15px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	justify-content: flex-end;
 }
 
-/*--------------HTML CONTACTO---------------*/
+.funcional:hover {
+	transform: scale(1.3);
+}
+
+/*--------------FORMULARIO CONTACTO---------------*/
+
 .boxFormularioAzul {
 	width: 600px;
 	height: 900px;
@@ -338,18 +400,21 @@ h2 {
 	text-decoration-color: #FFFFFF;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .boxFormularioAzul p {
 	font-weight: 800;
 	font-style: bold;
 	padding: 80px 50px 0 0;
 	color: white;
 }
+
 .boxFormularioAzul img {
 	position: absolute;
 	object-fit: none;
 	object-position: bottom left;
 	margin-top: 613px;
 }
+
 .boxFormularioRosa {
 	width: 861px;
 	height: 900px;
@@ -369,12 +434,15 @@ h2 {
 	color: #4333FF;
 	padding: 80px 0 0 100px;
 }
+
 .boxFormularioRosa form {
 	padding-top: 33px;
 }
+
 .boxFormularioRosa span {
 	text-align: center;
 }
+
 .estiloFormulario {
 	width: 604px;
 }
@@ -384,12 +452,14 @@ h2 {
 	display: flex;
 	justify-content: center;
 }
+
 label {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 32px;
 	text-align: none !important;
 }
+
 input {
 	width: 600px;
 	height: 59px;
@@ -397,6 +467,7 @@ input {
 	border: 3px solid #EDD3CF;
 	border-radius: 6px;
 }
+
 .mensaje {
 	width: 600px;
 	height: 200px;
@@ -404,7 +475,8 @@ input {
 	border: 3px solid #EDD3CF;
 	border-radius: 8px;
 }
-.inputEnviar{
+
+.inputEnviar {
 	width: 160px;
 	margin-top: 30px;
 	background: #FCB400 !important;
@@ -413,7 +485,8 @@ input {
 	font-weight: 600;
 	font-size: 20px;
 	color: white;
-	}
+}
+
 .restablecer {
 	width: 160px;
 	margin: 30px 0 0 0;
@@ -424,7 +497,9 @@ input {
 	font-size: 20px;
 	color: white;
 }
-/*--------------SECRETARIA--------------*/
+
+/*--------------ARTICULO SECRETARIA--------------*/
+
 .boxflex {
 	background-image: url("img/fondo_home_tenis.jpg");
 	height: 395px;
@@ -435,6 +510,7 @@ input {
 	justify-content: space-between;
 	margin:  50px 0 50px 0;
 }
+
 .titulosecretaria {
 	width: 100%;
 	margin: auto;
@@ -444,6 +520,7 @@ input {
 	font-size: 35px;
 	color: #FFF6F6;
 }
+
 .boxtexto {
 	width: 300px;
 	display: flex;
@@ -456,6 +533,7 @@ input {
 	font-size: 15px;
 	color: #FFF6F6;
 }
+
 .boxoportunidades {
 	width: 300px;
 	display: flex;
@@ -468,6 +546,7 @@ input {
 	font-size: 15px;
 	color: #FFF6F6;
 }
+
 .boxsalud {
 	width: 300px;
 	display: flex;
@@ -480,6 +559,7 @@ input {
 	font-size: 15px;
 	color: #FFF6F6;
 }
+
 .contenedor {
 	display: flex;
 	flex-direction: row;
@@ -489,12 +569,13 @@ input {
 }
 
 /*--------------CARDS EVENTOS------------*/
-.cardsFlex{
+
+.cardsFlex {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content:space-around;
-	margin-bottom: 80px;
+	margin: 5rem 0 5rem 0;
 }
 
 .cardsFlex h3 {
@@ -555,6 +636,7 @@ input {
 .cardPerrunla:hover {
 	transform: scale(1.05);
 }
+
 /*----FORMULARIO INSCRIPCION------*/
 
 .popUp {
@@ -567,10 +649,11 @@ input {
 	border: 8px solid #F6ECEA;
 	border-radius: 97px;
 }
+
 .boxFormularioRosaInsc {
-	width: 90%;
+	width: 60%;
 	height: 1000px;
-	padding: 100px 0 0 40px;
+	padding: 100px 0 0 120px;
 	left: 824px;
 	top: 983px;
 	background: #F6ECEA;
@@ -580,6 +663,7 @@ input {
 	flex-direction: column;
 	color: #4333FF;
 }
+
 .boxFormularioRosaInsc span {
 	text-decoration-color: #FFFFFF;
 	font-family: 'Montserrat';
@@ -599,6 +683,7 @@ input {
 	font-weight: 400;
 	font-size: 15px;
 }
+
 .columnasInscripcion input {
 	width: 350px;
 	height: 59px;
@@ -606,9 +691,10 @@ input {
 	border: 3px solid #EDD3CF;
 	border-radius: 6px;
 }
+
 .boxFormularioAzulInsc {
 	padding-top: 100px;
-	width: 650px;
+	width: 30%;
 	height: 1000px;
 	background: #4333FF;
 	border-radius: 93px 0px 0px 92px;
@@ -618,24 +704,29 @@ input {
 	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 	flex-direction: column;
 }
+
 .boxFormularioAzulInsc img {
-	width: 400px;
+	width: 450px;
 	margin: 60px auto 0 auto;
 }
+
 .tituloForminsc {
 	font-family: 'Montserrat';
 	font-weight: 700;
 	font-size: 35px;
 }
+
 .boxFormularioAzulInsc {
 	color: white;
 	font-family: 'Montserrat';
 	font-weight: 400;
 	font-size: 25px;
 }
+
 .estiloFormInsc {
 	width: 200px;
 }
+
 .cajaDeportes {
 	width: 230px;
 	height: 59px;
@@ -644,7 +735,101 @@ input {
 	border-radius: 6px;
 }
 
+/*--------------EVENTOS--------------*/
+
+.textosArticulos {
+	width: 50%;
+}
+
+.decoracionColonia {
+	background-color: #37C692;
+	height: 10px;
+	width: 60%;
+	margin-left: 60px;
+}
+
+.colonia {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 50px 0 50px 0;
+}
+
+.colonia h3 {
+	font-family: 'Montserrat';
+	font-weight: 800;
+	font-size: 50px;
+	color: #37C692;
+	width: 40%;
+	margin: 50px 0 0 50px;
+}
+
+.colonia p {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 20px;
+	color: #4D4D4D;;
+	width: 50%;
+	margin: 50px 0 0 50px;
+}
+
+.colonia img {
+	align-content: flex-start;
+	width: 800px;
+	border-radius: 0 60px 60px 0;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.decoracionTalleres {
+	background-color: #EE6552;
+	height: 10px;
+	width: 60%;
+	margin-left: 60px;
+}
+
+.talleres {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row-reverse;
+	align-items: center;
+	margin: 50px 0 50px 0;
+}
+
+.talleres h3 {
+	font-family: 'Montserrat';
+	font-weight: 800;
+	font-size: 50px;
+	color: #EE6552;
+	width: 40%;
+	margin: 60px 0 0 60px;
+}
+
+.talleres p {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 20px;
+	color: #4D4D4D;;
+	width: 50%;
+	margin: 60px 0 0 60px;
+}
+
+.talleres img {
+	align-content: flex-start;
+	width: 800px;
+	border-radius: 60px 0 0 60px;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.cardsEventos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 100px 0 60px 0;
+	height: 400px;
+}
+
 /*--------------FOOTER--------------*/
+
 footer { 
 	position: inherit;
 	height: 140px;
@@ -657,6 +842,7 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 }
+
 footer img {
 	width: 18px;
 	display: flex; 
@@ -689,99 +875,103 @@ footer li {
 	margin: 0 5px 10px 0px;
 }
 
+/*--------MEDIA QUERY PARA PANTALLAS 600px----*/
+
 @media screen and (max-width: 600px){
+	
+body {
+	with: 600px;
+}
+	
+.cabeceraHome {
+	background-image: url("img/header_home.jpg");
+	width: 100%;
+}
 
-	body {
-		width: 100%;
-	}
-	.checktbt{
-		display: block;
-	}
+.checktbt{
+	display: block;
+}
 	
-	.menuiconos{
-		display: block;
-		position: fixed;
-		top: 20px;
-		right: 20px;
-		cursor: pointer;
-	}
-	header {
-		overflow: hidden;
-	}
-	h1 { 
-		margin: 150px 0px 0px 30px;
-		font-size: 70px;
-	}
-	h2 { 
-		font-size: 70px;
-	}
-	.bold { 
-		font-size: 70px;
-	}
+.menuiconos{
+	display: block;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+header {
+	overflow: hidden;
+}
+	
+h1 { 
+	margin: 150px 0px 0px 30px;
+	font-size: 70px;
+}
+	
+h2 { 
+	font-size: 70px;
+}
+	
+.bold { 
+	font-size: 70px;
+}
+	
+.botonera {
+	margin-left: 160px; 
+}
 
-	.botonera {
-		margin-left: 160px; 
-	}
-	a{
-		color: black;
-	}
+a {
+	color: black;
+}
 	
-	nav ul{
-		display: block;
-		position: fixed;
-		top: 70px;
-		right:-100%;
-		background-color:#FFF6F6;
-		width: 100%;
+nav ul {
+	display: block;
+	position: fixed;
+	top: 70px;
+	right:100%;
+	background-color:#FFF6F6;
+	width: 100%;
+}
+
+nav ul li {
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	margin-left: 140px;
+}
+	
+.imgnav {
+	display: none;
+}
+
+#check:checked ~ ul {
+	left:0;
+}
+	
+.Unlalogo {
+	display: none;
+}
+	
+.Deportes {
+	grid-template-columns: repeat(2,240px);
+	grid-template-rows: repeat(4,310px);
+	grid-gap: 2rem; 
 		
-	}
-	nav ul li{
-		padding: 2rem;
-		display: flex;
-		justify-content: center;
-		margin-left: 130px;
-	}
-	
-	.imgnav{
-		display: none;
-	}
-	#check:checked ~ ul{
-		left:0;
-	}
-	
-	.Unlalogo{
-		display: none;
-	}
-	
-	.iconosRedes {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin-right: 30px;
-		width: 180px;
-		height: auto;
-	}
-	
-	.Deportes {
-		grid-template-columns: repeat(2,240px);
-		grid-template-rows: repeat(4,310px);
-		grid-gap: 2rem; 
-		
-	}
-	/*--------secretaria----------------*/
+}
+
+/*-----------SECRETARIA MEDIA 600px-------------*/
 .boxflex {
 	background-image: url("img/fondo_tenis_mobile.png");
 	background-repeat: no-repeat;
 	background-size: 728px;
 	height: 728px;
 }
-
+	
 .titulosecretaria {
 	width: 60%;
 	font-weight: 800;
 	font-size: 17px;
 }
-
+	
 .boxtexto {
 	width: 300px;
 	align-content: center;
@@ -792,6 +982,7 @@ footer li {
 	font-size: 12px;
 	color: #FFF6F6;
 }
+
 .boxoportunidades {
 	width: 300px;
 	align-content: center;
@@ -802,6 +993,7 @@ footer li {
 	font-size: 15px;
 	color: #FFF6F6;
 }
+
 .boxsalud {
 	width: 300px;
 	display: flex;
@@ -813,6 +1005,7 @@ footer li {
 	font-size: 15px;
 	color: #FFF6F6;
 }
+
 .contenedor {
 	display: flex;
 	flex-direction: column;
@@ -822,38 +1015,96 @@ footer li {
 	padding: 0 120px 0 120px;
 }
 
+/*-------------CARDS MEDIA 600PX-----------*/
+	
+.cardsFlex{
+	display: flex;
+	flex-direction: column;
+}
+	
 .cardTorneoajedrez{
-	margin-right: 50px;
+	margin: 50px auto 0 auto;
 }
-
-.cardNatacion{
-	margin-right: 50px;
+	
+.cardNatacion{ 
+	margin: 50px auto 0 auto;
 }
-
+	
 .cardPerrunla{
-	margin-right: 40px;
+	margin: 30px auto 50px auto;
 }
+
+
+/*------------FOOTER MEDIA 600PX---------------*/	
+
 footer li {
 	list-style: none;
 	padding: 30px 0 0px 0px;
 	width: 100%;
 	margin-left: 50px;
 }
-
-footer{
-	align-content: space-between;
+	
+footer {
+	align-content: space-between;	
+}
+	
+.sitiosdeinteres {
+	display:none;
 }
 
 .iconosRedes {
-	display: grid;
-	grid-template-columns: repeat(2);
-	grid-template-rows: repeat(2); 
+	flex-direction: row;
 	justify-content: space-between;
-	margin-right: 10px;
+	margin-right: 30px;
 	width: 180px;
-	height: 180px;
+	height: auto;
 }
-.sitiosdeinteres {
-	display: none;
+
 }
+
+/*--------MEDIA QUERY PARA PANTALLAS DE 601 A 1200px---------*/
+
+@media screen and (min-width: 601px) and (max-width: 1200px){
+
+.Deportes {
+	grid-template-columns: repeat(2,240px);
+	grid-template-rows: repeat(4,310px);
+	grid-gap: 6rem; 	
+}
+	
+.titulosecretaria {
+	font-size: 20px;
+}
+	
+.contenedor {
+	padding: 0 0px 0 0px;
+}
+	
+.cardTorneoajedrez {
+	margin-left: 50px;
+}
+
+.cardNatacion {
+	margin-right: 0px;
+	margin-left: 30px;
+}
+	
+.cardPerrunla {
+	margin-right: 60px;
+	margin-left: 30px;
+}
+	
+footer li {
+	list-style: none;
+	padding: 30px 0 0px 20px;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 70px;
+}
+
+footer { 
+	font-size: 17px;
+}
+	
 }
