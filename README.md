@@ -1,5 +1,5 @@
 # Grupo DeportUnla 1er cuatrimestre 2022
-Equipo con temática "Deportes" 
+Equipo con temática "Deportes". Se dedicó a hacer una página sobre los deportes que se pueden realizar dentro de la Universidad Nacional de Lanús (UNLa) encontrando la problemática de la dificultad de acceder a noticias e inscripciones.
 
 ## Integrantes
 * Martín Moreno, Camila
