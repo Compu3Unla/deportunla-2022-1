@@ -1,4 +1,4 @@
-# Grupo DeportUnla primer cuatrimestre 2022
+# Grupo DeportUnla 1er cuatrimestre 2022
 Equipo con temática "Deportes" 
 
 ## Integrantes
